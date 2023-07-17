@@ -1,0 +1,351 @@
+:root {
+    --main-color: #0078ff;
+    --sconde-color: #f5f5f5;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--sconde-color);
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+section {
+    background-color: var(--sconde-color);
+}
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+.nav-item a {
+    font-size: 18px;
+}
+
+header {
+    background-image: url(../img/intro-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.layer-intro {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.span-intro {
+    font-size: 40px;
+}
+
+#main-nav {
+    transition: background-color 1s;
+}
+
+#btnUp {
+    background-color: var(--main-color);
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    border-radius: 50%;
+    display: none;
+}
+
+
+.about-txt2 p {
+    font-size: 1.25rem;
+}
+
+.titel-left {
+    font-size: 2rem;
+}
+
+.about-img img {
+    border-radius: 5%;
+}
+
+.titel-left {
+    position: relative;
+}
+
+.titel-left::after {
+
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.titel-SERVICES {
+    position: relative;
+}
+
+.titel-SERVICES::after {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    bottom: 0px;
+    left: 47%;
+}
+
+
+.icon-serv div {
+    border: 6px solid var(--main-color);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    transition: color 0.5s, border-color 0.5s, background-color 0.5s;
+}
+
+.icon-serv i {
+    font-size: 80px;
+}
+
+.shadow-lg:hover .icon-serv div {
+    color: #f5f5f5;
+    background-color: var(--main-color);
+    border-color: #d4c9c9;
+}
+
+
+.img-2 {
+    background-image: url(../img/counters-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.layar-2 {
+    background-color: rgba(21, 100, 191, 0.6);
+}
+
+.ditals {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+
+}
+
+.work i {
+    font-size: 30px;
+    color: var(--main-color)
+}
+
+.work-2 {
+    background-color: #fff;
+
+}
+
+.work-img {
+    transition: transform 0.5s;
+}
+
+
+.work-img:hover {
+    transform: scale(1.1);
+    overflow: auto;
+
+}
+
+.loader {
+    border: 2px solid #FFF;
+    width: 60px;
+    height: 60px;
+    background: #09c;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 24px solid;
+    border-color: transparent #FFF;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loding {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+    z-index: 100000;
+}
+
+/* **************************** */
+#lightboxcontainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999;
+}
+
+#lightbox {
+    background-image: url(../img/work-2.jpg);
+    background-size: cover;
+    width: 65%;
+    height: 550px;
+    position: relative;
+    border: 5px solid #fff;
+}
+
+#xmark {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+#lightbox i {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 10px;
+
+}
+
+
+
+
+@media (Max-width: 600px) {
+
+    .tst {
+        background-color: #09c;
+    }
+
+    /* [class*="col-"] {
+        width: 100%;
+    } */
+
+
+}
+
+.item {
+    height: 200px;
+    width: 200px;
+    background-color: #09c;
+}
+
+
+/* **************************** */
+.overlay {
+    background-image: url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+
+.overlayLayer {
+    background-color: rgba(21, 100, 191, 0.8);
+}
+
+#icon {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+h3 .nav-link:hover {
+    color: var(--main-color);
+}
+
+
+.contactBox {
+    /* width: 90%; */
+    /* height: 80%; */
+    background-color: var(--sconde-color);
+
+}
+
+.contactTxt {
+    position: relative;
+}
+
+.contactTxt h3::before {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    bottom: 10px;
+    /* left: 0px; */
+}
+
+.contactIcon i {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.contactIcon i {
+    text-align: center;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+
+    margin: 10px;
+    padding: 10px 0;
+    border: 5px solid var(--main-color);
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.contactIcon i:hover {
+    border: 5px solid var(--sconde-color);
+    color: var(--sconde-color);
+    background-color: var(--main-color);
+}
+
+footer {
+  
+    padding: 10px 10px;
+    color: var(--sconde-color);
+    background-color: rgb(21, 100, 190);
+}
